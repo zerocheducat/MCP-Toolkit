@@ -1,0 +1,53 @@
+# Python and environment
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+
+# Generated MCP configuration and host connection files
+WebSearch/webmcp_config.json
+WebSearch/aicy-connection.json
+MemoryHub/jan-connection.txt
+MemoryHub/.memoryhub-python-path
+Meme/meme_config.json
+**/*connection.local.json
+
+# Persistent personal data, stored sessions, and generated media
+**/data/
+**/downloads/
+**/screenshots/
+**/chrome-profile/
+**/browser-profile/
+**/playwright-profile/
+**/user-data/
+**/cache/
+**/logs/
+*.log
+*.har
+*.trace
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Local user meme images; preserve an empty example folder
+Meme/memes/*
+!Meme/memes/.gitkeep
+
+# Local config of JMComic if supplied under the project
+JMComic/option.yml
+JMComic/option.yaml

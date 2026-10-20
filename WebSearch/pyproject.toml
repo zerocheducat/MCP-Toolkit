@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aicy-webmcp"
+version = "0.1.2"
+description = "Aicy Web MCP: Clash-routed search and persistent browser automation over MCP stdio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp==2.2.0",
+  "pydantic==2.13.5",
+  "httpx[socks]>=0.27,<1",
+  "beautifulsoup4>=4.12,<5",
+  "playwright>=1.50,<2"
+]
+
+[project.scripts]
+webmcp = "webmcp.cli:main"
+webmcp-mcp = "webmcp.mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

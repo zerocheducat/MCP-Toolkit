@@ -1,0 +1,16 @@
+{
+  "meme_dir": "./memes",
+  "extensions": [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp",
+    ".gif"
+  ],
+  "recursive": true,
+  "tag_aliases": {},
+  "append_probability": 0.0,
+  "image_only_probability": 0.0,
+  "cooldown_eligible_calls": 0,
+  "recent_history_size": 20
+}

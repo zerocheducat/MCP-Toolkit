@@ -1,0 +1,4 @@
+mcp==2.3.0
+jmcomic==2.7.9
+pytest==8.4.2
+Pillow==12.3.0

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memoryhub-starter"
+version = "0.2.0"
+description = "Evidence-aware temporal personal memory for Jan over MCP stdio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp==2.2.0", "pydantic==2.13.5"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+
+[project.scripts]
+memoryhub = "memoryhub.cli:main"
+memoryhub-mcp = "memoryhub.mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

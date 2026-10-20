@@ -1,0 +1,15 @@
+{
+  "proxy_url": "",
+  "require_proxy": true,
+  "probe_url": "https://www.gstatic.com/generate_204",
+  "probe_timeout_seconds": 6.0,
+  "clash_controller_url": "",
+  "clash_controller_secret": "",
+  "clash_controller_required": false,
+  "search_provider": "duckduckgo_rendered_browser",
+  "browser_headless": false,
+  "browser_executable": "",
+  "browser_cdp_url": "",
+  "browser_timeout_ms": 15000,
+  "max_search_results": 10
+}
